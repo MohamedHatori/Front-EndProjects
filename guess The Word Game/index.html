@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>guess The Word</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <!-- Header -->
+      <header class="game-header">
+        <button class="top-btn" id="new-game">↻ New Game</button>
+
+        <div class="title">
+          <h1>GUESS THE WORD</h1>
+          <p>Find the hidden word in 6 tries</p>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="game-layout">
+        <!-- Game Area -->
+        <section class="game-card">
+          <div class="inputs">
+            <!-- JavaScript generates Try 1 ... Try 6 هنا -->
+          </div>
+
+          <div class="buttons">
+            <button class="check">✓ Check Word</button>
+            <button class="hint">💡 Hint</button>
+          </div>
+
+          <div class="message"></div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="key-card">
+            <h2>KEY COLORS</h2>
+
+            <div class="key-item">
+              <span class="color correct"></span>
+              <div>
+                <h3>Correct & In Place</h3>
+                <p>The letter is correct and in the right place.</p>
+              </div>
+            </div>
+
+            <div class="key-item">
+              <span class="color misplaced"></span>
+              <div>
+                <h3>Correct But Not In Place</h3>
+                <p>The letter is in the word but in the wrong place.</p>
+              </div>
+            </div>
+
+            <div class="key-item">
+              <span class="color wrong"></span>
+              <div>
+                <h3>Wrong Letter</h3>
+                <p>The letter is not in the word.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-card">
+            <div class="progress-header">
+              <h2>PROGRESS</h2>
+              <span>0/6</span>
+            </div>
+
+            <div class="progress-dots">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </aside>
+      </main>
+
+      <!-- Tip -->
+      <div class="tip">
+        ⭐ <strong>TIP:</strong>
+        Think of programming terms, tools or concepts.
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <strong>Guess The Word</strong>
+        <span>Sharpen your mind. One word at a time.</span>
+      </footer>
+    </div>
+    <script src="/js/guess.js"></script>
+  </body>
+</html>
